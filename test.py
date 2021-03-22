@@ -1,16 +1,15 @@
-import serial #Serial imported for Serial communication
-import time #Required to use delay functions
+import serial
+import time
  
-ArduinoSerial = serial.Serial('com3',9600) #Create Serial port object called arduinoSerialData
-time.sleep(2) #wait for 2 secounds for the communication to get established
+ArduinoSerial = serial.Serial('com3',9600)
+time.sleep(2)
 
-#print ("Enter 1 to turn ON LED and 0 to turn OFF LED")
-ArduinoSerial.write('1'.encode())
+"""ArduinoSerial.write('1'.encode())
 for i in range(5):
 	ArduinoSerial.write('2'.encode())
-	time.sleep(1)
+	time.sleep(1)"""
 
-"""while 1: #Do this forever
+while 1: #Do this forever
 
     var = input() #get input from user
     print ("you entered", var) #print the intput for confirmation
@@ -32,7 +31,7 @@ for i in range(5):
 
     if (var == '9'):
     	print("exiting...\n")
-    	exit();"""
+    	exit();
 
 
 
