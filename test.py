@@ -4,11 +4,12 @@ import time
 ArduinoSerial = serial.Serial('com3',9600)
 time.sleep(2)
 
-"""ArduinoSerial.write('1'.encode())
+ArduinoSerial.write('1'.encode())
 for i in range(5):
 	ArduinoSerial.write('2'.encode())
-	time.sleep(1)"""
+	time.sleep(1)
 
+"""
 while 1: #Do this forever
 
     var = input() #get input from user
@@ -31,7 +32,7 @@ while 1: #Do this forever
 
     if (var == '9'):
     	print("exiting...\n")
-    	exit();
+    	exit();"""
 
 
 
